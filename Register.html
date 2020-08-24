@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<a href="index.html">
+		<h3>HomePage</h3>
+	</a>
+
+	<hr>
+
+	<h1>Registration Screen</h1>
+
+	<hr>
+
+	<!-- NOTE: the <form> has 2 methods; GET & POST -->
+
+	<form method="POST">
+
+		<!-- MARK 1: Form TextFields -->
+
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="Password" name="password" minlength="8"><br>
+		Birthday: <input type="date" name="birthday"><br>
+
+		<!-- MARK 2: Form Radio Buttons -->
+
+		Gender:<br> 
+		<input type="radio" name="gender" value="male">Male<br>
+		<input type="radio" name="gender" value="female">Female<br>
+		<input type="radio" name="gender" value="other">Other<br>
+
+		<!-- MARK 3: Form Checkboxes -->
+
+		Pets: <br>
+		<input type="checkbox" name="cat">Cat<br>
+		<input type="checkbox" name="dog">Dog<br>
+		<input type="checkbox" name="other">Other<br>
+
+		<!-- MARK 4: Form Dropdown Menu -->
+
+		Cars:
+		<select name="cars">
+			<option value="None">None</option>
+			<option value="Audi">Audi</option>
+			<option value="BMW">BMW</option>
+			<option value="Ferrari">Ferrari</option>
+			<option value="Mercedes">Mercedes</option> 
+		</select><br>
+
+		<!-- MARK 5: Form Buttons -->
+
+		<input type="submit" value="Register">
+		<input type="reset">
+
+	</form>
+
+</body>
+</html>
